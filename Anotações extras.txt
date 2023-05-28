@@ -1,0 +1,12 @@
+Anotações detalhadas:
+
+1. O código importa o módulo `random` para gerar a senha aleatória.
+2. São definidos os conjuntos de caracteres possíveis para compor a senha: `n` para números de 0 a 9, `mi` para letras minúsculas, `ma` para letras maiúsculas e `e` para caracteres especiais.
+3. O conjunto `all` é criado concatenando todos os conjuntos anteriores em um único conjunto.
+4. O usuário é solicitado a selecionar as propriedades desejadas para a senha, digitando as opções separadas por espaço. As opções disponíveis são: `n`, `ma`, `mi`, `e` e `all`.
+5. O usuário também é solicitado a fornecer um prefixo e um sufixo opcionais para a senha.
+6. O usuário escolhe o tamanho desejado para a senha.
+7. Um loop percorre as opções selecionadas pelo usuário e adiciona o conjunto correspondente à lista `selecionadas`. Caso o usuário selecione uma opção inválida, uma mensagem de erro é exibida.
+8. A lista `selecionadas` é convertida em uma string única, concatenando todos os conjuntos selecionados.
+9. A senha é gerada aleatoriamente, utilizando o prefixo, uma seleção aleatória de caracteres do conjunto selecionado e o sufixo.
+10. A senha gerada é exibida no console.
